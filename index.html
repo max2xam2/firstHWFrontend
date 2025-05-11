@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="first_project/images/icon.ico" type="image/x-icon">
+    <title>portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="heading">Портфолио</div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#Home">Начало</a></li>
+                <li><a href="#My skill">Навыки</a></li>
+                <li><a href="#Hobbies">Мои хобби</a></li>
+                <li><a href="#Contact">Обратная связь</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="line" id="Home">
+        <div class="side1">
+            <h1>Приветствие</h1>
+            <p class="about-text">
+                Меня зовут Максим, мне 20 лет, я студент первого курса. Моя главная страсть — это IT-сфера: мне нравится программирование, технологии и всё, что связано с цифровым миром. В свободное время я люблю гулять, особенно если прогулка совмещается с изучением новых мест или встречей с друзьями. Ещё одно моё увлечение — коллекционирование монет, потому что это сочетает в себе историю, искусство и азарт поиска редких экземпляров. Учёбу я воспринимаю не как обязанность, а как возможность развиваться и приближаться к своей цели — карьере в IT. Мне нравится учиться, узнавать новое и применять знания на практике.
+            </p>
+        </div>
+        <div class="side2">
+            <img src="first_project/images/skrudjj.jpg" width="600" alt="Image of Max">
+        </div>
+    </div>
+
+    <section class="about" id="My skill">
+        <div class="content">
+            <div class="title"><span>Мои навыки</span></div>
+            <div class="boxes">
+                <div class="box">
+                    <div class="topic">
+                        <a href="#" target="_blank">HTML & CSS</a>
+                    </div>
+                    <p>Очень надеюсь, что смог овладеть базовым набором знаний, с которым смог написать этот сайт.</p>
+                </div>                
+                <div class="box">
+                    <div class="topic">
+                        <a href="#" target="_blank">GitHub</a>
+                    </div>
+                    <p>Владею базовыми навыками работы с Git и GitHub: создаю репозитории, делаю коммиты изменений, использую ветки и работаю с удалёнными репозиториями.</p>
+                </div>
+                <div class="box">
+                    <div class="topic">
+                        <a href="#" target="_blank">Java</a>
+                    </div>
+                    <p>Изучение этого языка в самом начале,изучаю основы ООП и структуру данных. Также начал знакомство с фреймворком Java Spring Boot</p>
+                </div>
+                <div class="box">
+                    <div class="topic">
+                        <a href="#" target="_blank">Алгоритмы</a>
+                    </div>
+                    <p>Изучаю алгоритмы и структуры данных, в последнее время работаю преимущественно с алгоритмами на графах</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="hobbies" id="Hobbies">
+        <div class="hobby-container">
+          <div class="hobby-image">
+            <img src="first_project/images/coins.jpg" alt="Image of Max">
+          </div>
+          <div class="hobby-text">
+            <h2>Мои хобби</h2>
+            <p>
+              А теперь я бы хотел рассказать о своих хобби. Все они очень спокойные, но интересные.
+              Я родился в небольшом прибрежном городке, где шум волн и свежий морской воздух были
+              неотъемлемой частью повседневной жизни. Поэтому мне особенно близки занятия, которые
+              помогают почувствовать гармонию и полное спокойствие.
+            </p>
+            <p>
+              Также мне очень нравится история: я люблю узнавать новые исторические факты,
+              смотреть документальные фильмы, что помогает расширять кругозор.
+            </p>
+            <p>
+              Но, пожалуй, моим самым любимым хобби является коллекционирование монет.
+              Мне интересно узнавать, к каким событиям приурочен их выпуск, где и как они использовались,
+              а также какие культурные или политические смыслы были заложены в их выпуск.
+            </p>
+          </div>
+        </div>
+      </section>
+      
+    <section class="contact" id="Contact">
+        <div class="content">
+            <div class="title"><span>Обратная связь</span></div>
+            <div class="contactMenu">
+                <form action="letter.html" method="get">
+                    <div class="input1">
+                        <div class="label1">Введите ваше имя</div>
+                        <div class="input2">
+                            <input type="text" 
+                                   placeholder="Введите ваше имя здесь(только английские буквы и цифры)" 
+                                   pattern="[А-Яа-яЁё0-9\s]+" 
+                                   title="Только русские буквы и цифры" 
+                                   required>
+                        </div>
+                        <div class="label1">Введите ваш адрес электронной почты</div>
+                        <div class="input2">
+                            <input type="email" 
+                                   placeholder="Введите ваш адрес электронной почты здесь(xxx@xxx.xx)" 
+                                   pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                                   title="Только английские буквы,цифры и спец.знаки"
+                                   required>
+                        </div>                
+                        <div class="label1">Введите ваше сообщение</div>
+                        <div class="input2">
+                            <input type="text" 
+                                   placeholder="Введите сюда ваше сообщение и мы обязательно увидим его">
+                        </div>                
+                        <div class="button">
+                            <button type="submit">Отправить обращение</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="input3">
+                    <div class="rightside1">
+                        <div class="title1"><span>Мои контакты</span></div>
+                        <div class="content1">
+                            Россия, Московская область, город Долгопрудный, МФТИ<br>
+                            Адрес электронной почты: oskin.md@phystech.edu
+                        </div>
+                        <div class="title1"><span>Дополнительная информация</span></div>
+                        <div class="content1">
+                            Эта страница создана с целью знакомства общества с создателем этой страницы.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-message">
+            <span>Спасибо за просмотр! Обновление в конце этой недели...</span>
+        </div>
+    </footer>
+</body>
+
+</html>
